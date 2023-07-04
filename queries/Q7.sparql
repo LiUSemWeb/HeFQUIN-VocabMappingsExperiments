@@ -1,0 +1,142 @@
+prefix global: <http://www.global-example#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT * WHERE {
+  {SERVICE <http://127.0.0.1:8890/sparql> {
+  ?X rdf:type global:Student .
+  ?X ?P1 ?Y .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8891/sparql> {
+  ?X rdf:type global:Student .
+  ?X ?P1 ?Y .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8892/sparql> {
+  ?X rdf:type global:Student .
+  ?X ?P1 ?Y .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8893/sparql> {
+  ?X rdf:type global:Student .
+  ?X ?P1 ?Y .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8894/sparql> {
+  ?X rdf:type global:Student .
+  ?X ?P1 ?Y .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8895/sparql> {
+  ?X rdf:type global:Student .
+  ?X ?P1 ?Y .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8896/sparql> {
+  ?X rdf:type global:Student .
+  ?X ?P1 ?Y .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8897/sparql> {
+  ?X rdf:type global:Student .
+  ?X ?P1 ?Y .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8898/sparql> {
+  ?X rdf:type global:Student .
+  ?X ?P1 ?Y .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8899/sparql> {
+  ?X rdf:type global:Student .
+  ?X ?P1 ?Y .
+  }}
+  {SERVICE <http://127.0.0.1:8890/sparql> {
+ ?Y rdf:type global:Course .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8891/sparql> {
+ ?Y rdf:type global:Course .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8892/sparql> {
+ ?Y rdf:type global:Course .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8893/sparql> {
+ ?Y rdf:type global:Course .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8894/sparql> {
+ ?Y rdf:type global:Course .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8895/sparql> {
+ ?Y rdf:type global:Course .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8896/sparql> {
+ ?Y rdf:type global:Course .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8897/sparql> {
+ ?Y rdf:type global:Course .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8898/sparql> {
+ ?Y rdf:type global:Course .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8899/sparql> {
+ ?Y rdf:type global:Course .
+  }}
+  {SERVICE <http://127.0.0.1:8890/sparql> {
+  ?T ?P2 ?Y .
+  ?T rdf:type global:Professor .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8891/sparql> {
+  ?T ?P2 ?Y .
+  ?T rdf:type global:Professor .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8892/sparql> {
+  ?T ?P2 ?Y .
+  ?T rdf:type global:Professor .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8893/sparql> {
+  ?T ?P2 ?Y .
+  ?T rdf:type global:Professor .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8894/sparql> {
+  ?T ?P2 ?Y .
+  ?T rdf:type global:Professor .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8895/sparql> {
+  ?T ?P2 ?Y .
+  ?T rdf:type global:Professor .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8896/sparql> {
+  ?T ?P2 ?Y .
+  ?T rdf:type global:Professor .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8897/sparql> {
+  ?T ?P2 ?Y .
+  ?T rdf:type global:Professor .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8898/sparql> {
+  ?T ?P2 ?Y .
+  ?T rdf:type global:Professor .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8899/sparql> {
+  ?T ?P2 ?Y .
+  ?T rdf:type global:Professor .
+  }}
+}

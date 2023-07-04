@@ -1,0 +1,126 @@
+prefix global: <http://www.global-example#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT *
+WHERE
+{ 
+  {SERVICE <http://127.0.0.1:8890/sparql> {
+    ?P1 global:degreeFrom <http://www.University0.edu> .
+    ?P1 global:worksAt ?D1 .
+    ?P1 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8891/sparql> {
+    ?P1 global:degreeFrom <http://www.University0.edu> .
+    ?P1 global:worksAt ?D1 .
+    ?P1 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8892/sparql> {
+    ?P1 global:degreeFrom <http://www.University0.edu> .
+    ?P1 global:worksAt ?D1 .
+    ?P1 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8893/sparql> {
+    ?P1 global:degreeFrom <http://www.University0.edu> .
+    ?P1 global:worksAt ?D1 .
+    ?P1 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8894/sparql> {
+    ?P1 global:degreeFrom <http://www.University0.edu> .
+    ?P1 global:worksAt ?D1 .
+    ?P1 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8895/sparql> {
+    ?P1 global:degreeFrom <http://www.University0.edu> .
+    ?P1 global:worksAt ?D1 .
+    ?P1 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8896/sparql> {
+    ?P1 global:degreeFrom <http://www.University0.edu> .
+    ?P1 global:worksAt ?D1 .
+    ?P1 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8897/sparql> {
+    ?P1 global:degreeFrom <http://www.University0.edu> .
+    ?P1 global:worksAt ?D1 .
+    ?P1 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8898/sparql> {
+    ?P1 global:degreeFrom <http://www.University0.edu> .
+    ?P1 global:worksAt ?D1 .
+    ?P1 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8899/sparql> {
+    ?P1 global:degreeFrom <http://www.University0.edu> .
+    ?P1 global:worksAt ?D1 .
+    ?P1 rdf:type ?T .
+  }}
+  {SERVICE <http://127.0.0.1:8890/sparql> {
+    ?P2 global:degreeFrom <http://www.University0.edu> .
+    ?P2 global:worksAt ?D2 .
+    ?P2 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8891/sparql> {
+    ?P2 global:degreeFrom <http://www.University0.edu> .
+    ?P2 global:worksAt ?D2 .
+    ?P2 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8892/sparql> {
+    ?P2 global:degreeFrom <http://www.University0.edu> .
+    ?P2 global:worksAt ?D2 .
+    ?P2 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8893/sparql> {
+    ?P2 global:degreeFrom <http://www.University0.edu> .
+    ?P2 global:worksAt ?D2 .
+    ?P2 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8894/sparql> {
+    ?P2 global:degreeFrom <http://www.University0.edu> .
+    ?P2 global:worksAt ?D2 .
+    ?P2 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8895/sparql> {
+    ?P2 global:degreeFrom <http://www.University0.edu> .
+    ?P2 global:worksAt ?D2 .
+    ?P2 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8896/sparql> {
+    ?P2 global:degreeFrom <http://www.University0.edu> .
+    ?P2 global:worksAt ?D2 .
+    ?P2 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8897/sparql> {
+    ?P2 global:degreeFrom <http://www.University0.edu> .
+    ?P2 global:worksAt ?D2 .
+    ?P2 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8898/sparql> {
+    ?P2 global:degreeFrom <http://www.University0.edu> .
+    ?P2 global:worksAt ?D2 .
+    ?P2 rdf:type ?T .
+  }}
+  UNION
+  {SERVICE <http://127.0.0.1:8899/sparql> {
+    ?P2 global:degreeFrom <http://www.University0.edu> .
+    ?P2 global:worksAt ?D2 .
+    ?P2 rdf:type ?T .
+  }}
+  FILTER (?P1 != ?P2)
+}
