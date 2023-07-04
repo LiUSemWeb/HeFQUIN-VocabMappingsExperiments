@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix global: <http://www.global-example#> .
+@prefix tmp: <http://www.tmp-example#> .
+
+global:Course owl:equivalentClass tmp:Course .
+global:GraduateStudent owl:equivalentClass tmp:GraduateStudent .
+global:Student owl:equivalentClass tmp:Student .
+global:Professor owl:equivalentClass tmp:Professor .
+global:Faculty owl:equivalentClass tmp:Faculty .
+
+global:supervisor owl:equivalentProperty tmp:supervisor .
+global:worksAt owl:equivalentProperty tmp:worksAt .
+global:teaches owl:equivalentProperty tmp:teaches .
+global:phoneNumber owl:equivalentProperty tmp:phoneNumber .
+global:email owl:equivalentProperty tmp:email .
+global:researchTopic owl:equivalentProperty tmp:researchTopic .
+global:memberOf owl:equivalentProperty tmp:memberOf .
+global:isPartOf owl:equivalentProperty tmp:isPartOf .
+global:writtenBy owl:equivalentProperty tmp:writtenBy .
+global:degreeFrom owl:equivalentProperty tmp:degreeFrom .
+global:registersCourse owl:equivalentProperty tmp:registersCourse .

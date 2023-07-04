@@ -1,0 +1,64 @@
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
+PREFIX fd:     <http://www.example.org/se/liu/ida/hefquin/fd#>
+PREFIX ex:     <http://example.org/>
+
+ex:university0
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <http://127.0.0.1:8890/sparql> ] ;
+      fd:vocabularyMappingsFile "/home/sijch63/vocabularyMapping/federations/fed_diff/mappings/mappings_comp0.ttl" .
+
+ex:university1
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <http://127.0.0.1:8891/sparql> ] ;
+      fd:vocabularyMappingsFile "/home/sijch63/vocabularyMapping/federations/fed_diff/mappings/mappings_comp1.ttl" .
+
+ex:university2
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <http://127.0.0.1:8892/sparql> ] ;
+      fd:vocabularyMappingsFile "/home/sijch63/vocabularyMapping/federations/fed_diff/mappings/mappings_comp2.ttl" .
+
+ex:university3
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <http://127.0.0.1:8893/sparql> ] ;
+      fd:vocabularyMappingsFile "/home/sijch63/vocabularyMapping/federations/fed_diff/mappings/mappings_comp3.ttl" .
+
+ex:university4
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <http://127.0.0.1:8894/sparql> ] ;
+      fd:vocabularyMappingsFile "/home/sijch63/vocabularyMapping/federations/fed_diff/mappings/mappings_comp4.ttl" .
+
+ex:university5
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <http://127.0.0.1:8895/sparql> ] ;
+      fd:vocabularyMappingsFile "/home/sijch63/vocabularyMapping/federations/fed_diff/mappings/mappings_comp5.ttl" .
+
+ex:university6
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <http://127.0.0.1:8896/sparql> ] ;
+      fd:vocabularyMappingsFile "/home/sijch63/vocabularyMapping/federations/fed_diff/mappings/mappings_comp6.ttl" .
+
+ex:university7
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <http://127.0.0.1:8897/sparql> ] ;
+      fd:vocabularyMappingsFile "/home/sijch63/vocabularyMapping/federations/fed_diff/mappings/mappings_comp7.ttl" .
+
+ex:university8
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <http://127.0.0.1:8898/sparql> ] ;
+      fd:vocabularyMappingsFile "/home/sijch63/vocabularyMapping/federations/fed_diff/mappings/mappings_comp8.ttl" .
+
+ex:university9
+      a            fd:FederationMember ;
+      fd:interface [ a                  fd:SPARQLEndpointInterface ;
+                     fd:endpointAddress <http://127.0.0.1:8899/sparql> ] ;
+      fd:vocabularyMappingsFile "/home/sijch63/vocabularyMapping/federations/fed_diff/mappings/mappings_comp9.ttl" .

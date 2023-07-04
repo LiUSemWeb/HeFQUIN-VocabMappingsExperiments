@@ -1,0 +1,134 @@
+version: '3.7'
+
+
+services:
+  member_0:
+    container_name: member_0
+    image: tenforce/virtuoso:virtuoso7.2.5
+    environment:
+      - SPARQL_UPDATE=true
+      - VIRT_SPARQL_ResultSetMaxRows=1000000
+    restart: always
+    volumes:
+      - ./dataset/member_0:/usr/local/virtuoso-opensource/var/lib/virtuoso/db/toLoad
+    ports:
+      - "8890:8890"
+      - "1110:1111"
+
+  member_1:
+    container_name: member_1
+    image: tenforce/virtuoso:virtuoso7.2.5
+    environment:
+      - SPARQL_UPDATE=true
+      - VIRT_SPARQL_ResultSetMaxRows=1000000
+    restart: always
+    volumes:
+      - ./dataset/member_1:/usr/local/virtuoso-opensource/var/lib/virtuoso/db/toLoad
+    ports:
+      - "8891:8890"
+      - "1111:1111"
+
+  member_2:
+    container_name: member_2
+    image: tenforce/virtuoso:virtuoso7.2.5
+    environment:
+      - SPARQL_UPDATE=true
+      - VIRT_SPARQL_ResultSetMaxRows=1000000
+    restart: always
+    volumes:
+      - ./dataset/member_2:/usr/local/virtuoso-opensource/var/lib/virtuoso/db/toLoad
+    ports:
+      - "8892:8890"
+      - "1112:1111"
+
+  member_3:
+    container_name: member_3
+    image: tenforce/virtuoso:virtuoso7.2.5
+    environment:
+      - SPARQL_UPDATE=true
+      - VIRT_SPARQL_ResultSetMaxRows=1000000
+    restart: always
+    volumes:
+      - ./dataset/member_3:/usr/local/virtuoso-opensource/var/lib/virtuoso/db/toLoad
+    ports:
+      - "8893:8890"
+      - "1113:1111"
+
+  member_4:
+    container_name: member_4
+    image: tenforce/virtuoso:virtuoso7.2.5
+    environment:
+      - SPARQL_UPDATE=true
+      - VIRT_SPARQL_ResultSetMaxRows=1000000
+    restart: always
+    volumes:
+      - ./dataset/member_4:/usr/local/virtuoso-opensource/var/lib/virtuoso/db/toLoad
+    ports:
+      - "8894:8890"
+      - "1114:1111"
+
+  member_5:
+    container_name: member_5
+    image: tenforce/virtuoso:virtuoso7.2.5
+    environment:
+      - SPARQL_UPDATE=true
+      - VIRT_SPARQL_ResultSetMaxRows=1000000
+    restart: always
+    volumes:
+      - ./dataset/member_5:/usr/local/virtuoso-opensource/var/lib/virtuoso/db/toLoad
+    ports:
+      - "8895:8890"
+      - "1115:1111"
+
+  member_6:
+    container_name: member_6
+    image: tenforce/virtuoso:virtuoso7.2.5
+    environment:
+      - SPARQL_UPDATE=true
+      - VIRT_SPARQL_ResultSetMaxRows=1000000
+    restart: always
+    volumes:
+      - ./dataset/member_6:/usr/local/virtuoso-opensource/var/lib/virtuoso/db/toLoad
+    ports:
+      - "8896:8890"
+      - "1116:1111"
+
+  member_7:
+    container_name: member_7
+    image: tenforce/virtuoso:virtuoso7.2.5
+    environment:
+      - SPARQL_UPDATE=true
+      - VIRT_SPARQL_ResultSetMaxRows=1000000
+    restart: always
+    volumes:
+      - ./dataset/member_7:/usr/local/virtuoso-opensource/var/lib/virtuoso/db/toLoad
+    ports:
+      - "8897:8890"
+      - "1117:1111"
+
+  member_8:
+    container_name: member_8
+    image: tenforce/virtuoso:virtuoso7.2.5
+    environment:
+      - SPARQL_UPDATE=true
+      - VIRT_SPARQL_ResultSetMaxRows=1000000
+    restart: always
+    volumes:
+      - ./dataset/member_8:/usr/local/virtuoso-opensource/var/lib/virtuoso/db/toLoad
+    ports:
+      - "8898:8890"
+      - "1118:1111"
+
+  member_9:
+    container_name: member_9
+    image: tenforce/virtuoso:virtuoso7.2.5
+    environment:
+      - SPARQL_UPDATE=true
+      - VIRT_SPARQL_ResultSetMaxRows=1000000
+    restart: always
+    volumes:
+      - ./dataset/member_9:/usr/local/virtuoso-opensource/var/lib/virtuoso/db/toLoad
+    ports:
+      - "8899:8890"
+      - "1119:1111"
+

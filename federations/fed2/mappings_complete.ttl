@@ -1,0 +1,33 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lubm: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#> .
+@prefix global: <http://www.global-example#> .
+
+global:Course owl:equivalentClass lubm:Course .
+global:GraduateStudent owl:equivalentClass lubm:GraduateStudent .
+
+global:Student owl:unionOf (lubm:GraduateStudent lubm:UndergraduateStudent) . 
+global:Professor owl:unionOf (lubm:AssistantProfessor lubm:AssociateProfessor lubm:FullProfessor) .
+
+lubm:Lecturer rdfs:subClassOf global:Faculty .
+lubm:GraduateCourse rdfs:subClassOf global:Course .
+lubm:TeachingAssistant rdfs:subClassOf global:GraduateStudent .
+lubm:ResearchAssistant rdfs:subClassOf global:GraduateStudent .
+lubm:UndergraduateStudent rdfs:subClassOf global:Student .
+lubm:GraduateStudent rdfs:subClassOf global:Student .
+
+global:supervisor owl:equivalentProperty lubm:advisor .
+global:worksAt owl:equivalentProperty lubm:worksFor .
+global:teaches owl:equivalentProperty lubm:teacherOf .
+global:phoneNumber owl:equivalentProperty lubm:telephone .
+global:email owl:equivalentProperty lubm:emailAddress .
+global:researchTopic owl:equivalentProperty lubm:researchInterest .
+global:memberOf owl:equivalentProperty lubm:memberOf .
+global:isPartOf owl:equivalentProperty lubm:subOrganizationOf .
+global:writtenBy owl:equivalentProperty lubm:publicationAuthor .
+
+lubm:doctoralDegreeFrom rdfs:subPropertyOf global:degreeFrom .
+lubm:mastersDegreeFrom rdfs:subPropertyOf global:degreeFrom .
+lubm:undergraduateDegreeFrom rdfs:subPropertyOf global:degreeFrom .
+lubm:headOf rdfs:subPropertyOf global:worksAt .
+lubm:takesCourse rdfs:subPropertyOf global:registersCourse .
