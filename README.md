@@ -24,11 +24,10 @@ An instruction for generating datasets can be found in the folder [datasets](htt
 	```
 * For each federation member of Fed2, we change the IRIs of the vocabulary terms used in the dataset of each member by appending a member-specific suffix (ranging from 0 to 9) to each such IRI. So this federation is structurally the same as Fed1, but with a different vocabulary for each federation member. 
 
-To create datasets with local vocabularies, find the script 'rewrite_to_localschema.sh' under the folder [datasets](https://github.com/LiUSemWeb/HeFQUIN-VocabMappingsExperiments/tree/main/datasets) and run the following command:
+	To create datasets with local vocabularies, find the script 'rewrite_to_localschema.sh' under the folder [datasets](https://github.com/LiUSemWeb/HeFQUIN-VocabMappingsExperiments/tree/main/datasets) and run the following command:
 	```
 	sh rewrite_to_localschema.sh
 	```
-
 
 Alternatively, you can download generated datasets directly from the [Zenodo](https://zenodo.org/record/8114487) in the directory **datasets**.
 
@@ -42,9 +41,9 @@ You can find all the queries in the [queries](https://github.com/LiUSemWeb/HeFQU
 
 
 ## Experiments
-To execute experiments after setting up a federation, queries can be invoked from the test driver HeFQUIN engine using a shell script. We provide an example script under the [federations](https://github.com/LiUSemWeb/HeFQUIN-VocabMappingsExperiments/blob/main/experiments/exp1_noEqv_SHJ/run_experiment.sh) directory. 
+To execute experiments after setting up a federation, queries can be invoked from the test driver HeFQUIN engine using a shell script. We provide an example script under the [federations](https://github.com/LiUSemWeb/HeFQUIN-VocabMappingsExperiments/tree/main/experiments/exp1_noEqv_SHJ) directory. 
 ```
-sh rewrite_to_localschema.sh
+sh run_experiment.sh
 ```
 
 You can find the latest implementation of the HeFQUIN engine in the [Github repository](https://github.com/LiUSemWeb/HeFQUIN).
