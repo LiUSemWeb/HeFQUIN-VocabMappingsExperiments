@@ -3,8 +3,8 @@
 @prefix lubm: <http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#> .
 @prefix global: <http://www.global-example#> .
 
-global:Course owl:equivalentClass lubm:Course .
-global:GraduateStudent owl:equivalentClass lubm:GraduateStudent .
+lubm:Course owl:equivalentClass global:Course.
+lubm:GraduateStudent owl:equivalentClass global:GraduateStudent .
 
 global:Student owl:unionOf (lubm:GraduateStudent lubm:UndergraduateStudent) . 
 global:Professor owl:unionOf (lubm:AssistantProfessor lubm:AssociateProfessor lubm:FullProfessor) .
@@ -16,15 +16,15 @@ lubm:ResearchAssistant rdfs:subClassOf global:GraduateStudent .
 lubm:UndergraduateStudent rdfs:subClassOf global:Student .
 lubm:GraduateStudent rdfs:subClassOf global:Student .
 
-global:supervisor owl:equivalentProperty lubm:advisor .
-global:worksAt owl:equivalentProperty lubm:worksFor .
-global:teaches owl:equivalentProperty lubm:teacherOf .
-global:phoneNumber owl:equivalentProperty lubm:telephone .
-global:email owl:equivalentProperty lubm:emailAddress .
-global:researchTopic owl:equivalentProperty lubm:researchInterest .
-global:memberOf owl:equivalentProperty lubm:memberOf .
-global:isPartOf owl:equivalentProperty lubm:subOrganizationOf .
-global:writtenBy owl:equivalentProperty lubm:publicationAuthor .
+lubm:advisor owl:equivalentProperty global:supervisor .
+lubm:worksFor owl:equivalentProperty global:worksAt .
+lubm:teacherOf owl:equivalentProperty global:teaches .
+lubm:telephone owl:equivalentProperty global:phoneNumber .
+lubm:emailAddress owl:equivalentProperty global:email .
+lubm:researchInterest owl:equivalentProperty global:researchTopic .
+lubm:memberOf owl:equivalentProperty global:memberOf .
+lubm:subOrganizationOfowl:equivalentProperty global:isPartOf .
+lubm:publicationAuthor owl:equivalentProperty global:writtenBy .
 
 lubm:doctoralDegreeFrom rdfs:subPropertyOf global:degreeFrom .
 lubm:mastersDegreeFrom rdfs:subPropertyOf global:degreeFrom .
