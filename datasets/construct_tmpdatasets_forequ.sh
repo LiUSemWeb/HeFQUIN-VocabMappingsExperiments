@@ -105,6 +105,7 @@ escaped_old_uri_headOf=$(echo "$old_uri_headOf" | sed 's/[\/&]/\\&/g') # escape 
 escaped_new_uri_worksAt=$(echo "$new_uri_worksAt" | sed 's/[\/&]/\\&/g') # escape forward slashes and ampersands
 
 i=0
+mkdir -p tmplocalvocab_datasets
 while [ "$i" -le 9 ];
 do
   suffix="$i"

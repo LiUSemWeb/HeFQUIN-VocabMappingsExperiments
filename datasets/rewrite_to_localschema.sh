@@ -2,6 +2,7 @@ common_uri="http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#"
 escaped_common_uri=$(echo "$common_uri" | sed 's/[\/&]/\\&/g') # escape forward slashes and ampersands
 
 i=0
+mkdir -p diffschema_datasets
 while [ "$i" -le 9 ];
 do
   suffix="$i"
